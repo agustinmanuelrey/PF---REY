@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="Shortcut icon" href="./favicon.ico" type="image/png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat+Subrayada&family=Qwigley&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/estilos.css" />
+    <title>Juan Ignacio Bazterrica - Fotografia y Video Profesional</title>
+  </head>
+</html>
+
+<body>
+  <header class="heaeder-servicios">
+    <div class="navbar">
+      <div class="logo"><a href="">Juan Ignacio Bazterrica</a></div>
+      <ul class="links">
+        <li><a href="#inicio">Inicio</a></li>
+        <li><a href="#servicio">Servicios</a></li>
+        <li><a href="#portafolio">Portafolio</a></li>
+        <li><a href="#sobre_mi">Sobre mi</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+      </ul>
+      <!-- Hamburger menu -->
+      <a href="" class="action_btn">Comencemos</a>
+      <div class="toggle_btn">
+        <i class="fa-solid fa-bars"></i>
+      </div>
+    </div>
+
+    <div class="dropdown_menu">
+      <li><a href="#inicio">Inicio</a></li>
+      <li><a href="#servicio">Servicios</a></li>
+      <li><a href="#portafolio">Portafolio</a></li>
+      <li><a href="#sobre_mi">Sobre mi</a></li>
+      <li><a href="#contacto">Contacto</a></li>
+      <li><a href="" class="action_btn">Comencemos</a></li>
+    </div>
+
+
+    <!-- Servicios content -->
+      <section class="container-fluid">
+        <div class="row PrimerDiv d-flex align-items-center justify-content-center text-withe">
+          <h3>Biggest Clothe social-media
+            <br><span>Up To 50% Off</span>
+          </h3>
+          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nemo expedita illo dolores eveniet nulla, possimus totam molestiae impedit cumque deleniti animi reiciendis a pariatur sint ea fuga odit veritatis quibusdam?</p>
+        </div>
+      </section>  
+    <!-- Servicios content -->
+    
+  </header>
+
+  <main></main>
+
+  <footer id="contacto">
+    <div class="contenedor footer-content">
+      <div class="contact-us">
+        <h2 class="brand">AR Design</h2>
+        <p>Expertos en la creacion de tus sueños</p>
+      </div>
+      <div class="social-media">
+        <a href="./" class="social-media-icon">
+          <i class="bx bxl-facebook"></i>
+        </a>
+        <a href="./" class="social-media-icon">
+          <i class="bx bxl-instagram"></i>
+        </a>
+        <a href="./" class="social-media-icon">
+          <i class="bx bxl-whatsapp"></i>
+        </a>
+      </div>
+    </div>
+    <div class="line"></div>
+  </footer>
+  <script src="../js/bootstrap.bundle.min.js"></script>
+  <script src="js/menu.js"></script>
+  <script src="js/lightbox.js"></script>
+
+  <script>
+    const toggleBtn = document.querySelector(".toggle_btn");
+    const toggleBtnIcon = document.querySelector(".toggle_btn i");
+    const dropDownMenu = document.querySelector(".dropdown_menu");
+
+    toggleBtn.onclick = function () {
+      dropDownMenu.classList.toggle("open");
+      const isOpen = dropDownMenu.classList.contains("open");
+
+      toggleBtnIcon.classList = isOpen
+        ? "fa-solid fa-xmark"
+        : "fa-solid fa-bars";
+    };
+  </script>
+</body>
+</html>

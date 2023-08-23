@@ -32,7 +32,7 @@ a:hover {
 
 /* HEADER*/
 
-header {
+header{
     position: relative;
     padding: 0 2rem;
 
@@ -45,6 +45,7 @@ header {
     background-attachment: fixed;
     
 }
+
 
 .head{
     text-align: center;
@@ -103,6 +104,13 @@ header {
 .n-service{
     margin-bottom: 7px;
     color: rgb(106, 195, 251);
+}
+
+.contenedor-servicios main{
+    height: 80vh;
+    height: 80vh;
+    color: #fe6a00;
+    font-weight: 700
 }
 
 .number{

@@ -1,5 +1,10 @@
 /* HEADER*/
+body {
+    height: 100vh;
+    background-color: #ffffffca;
+    
 
+}
 li {
     list-style: none
 }
@@ -50,4 +55,9 @@ header {
 .copy {
     font-weight: 300px;
     font-size: 15px;
+}
+
+.primerDiv{
+    width: 100vh;
+    height: 250vh;
 }
